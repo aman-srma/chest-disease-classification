@@ -84,7 +84,7 @@ def load_json(path: Path) -> ConfigBox:
     with open(path) as f:
         content = json.load(f)
 
-    logger.info(f"json file loaded succesfully from: {path}")
+    logger.info(f"json File Loaded Succesfully From: {path}")
     return ConfigBox(content)
 
 
@@ -99,7 +99,7 @@ def save_bin(data: Any, path: Path):
         path (Path): path to binary file
     """
     joblib.dump(value=data, filename=path)
-    logger.info(f"binary file saved at: {path}")
+    logger.info(f"Binary File Saved At: {path}")
 
     
 
@@ -115,7 +115,7 @@ def load_bin(path: Path) -> Any:
         Any: object stored in the file
     """
     data = joblib.load(path)
-    logger.info(f"binary file loaded from: {path}")
+    logger.info(f"Binary File Loaded From: {path}")
     return data
 
 
