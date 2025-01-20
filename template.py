@@ -32,7 +32,7 @@ for filepath in list_of_files:
 
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
-        logging.info(f"CREATING DIRECTORY; {filedir} FOR THE FILE: {filename}")
+        logging.info(f"CREATING DIRECTORY: {filedir} FOR THE FILE: {filename}")
 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
