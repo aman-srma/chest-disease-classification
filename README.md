@@ -1,1 +1,1 @@
-# chest-disease-classification
+# Chest Disease Classification
